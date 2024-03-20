@@ -9,7 +9,7 @@ $$H_0: \mu_{a} = \mu_{0},$$
 $$H_A: \mu_{a} \neq \mu_0.$$
 In this formulation, $H_0$ is our null hypothesis and $H_A$ is our alternative hypothesis. The t-test can detect whether the null hypothesis is (likely) false. However, it cannot determine whether the null hypothesis is true. To perform the t-test, we calculate the t-statistic. There are many choices for t-statistics and we will consider the following two: Student's t-statistic and Welch's t-statistic. Student's t-statistic is the most commonly taught and is the following:
 $$t_s = \frac{\mu_a - \mu_0}{\sigma/\sqrt{n}}.$$
-In this formulation, $\sigma$ is the standard deviation of the grades of Mr. A's students and $n$ is the number of students. By the Central Limit Theorem, the distribution of sample means is approximately normal. Therefore, we determine the probability of observing these results under a $N(0, 1)$ distribution. If the probability is less than a given threshold, we reject the null and accept the alternative hypothesis.
+In this formulation, $\sigma$ is the standard deviation of the grades of Mr. A's students and $n$ is the number of students. By the Central Limit Theorem, the distribution of sample means is approximately normal. Therefore, we determine the probability of observing these results under a $t$-distribution, which limits to $N(0, 1)$ as the degrees of freedom tend towards infinity. If the probability is less than a given threshold, we reject the null and accept the alternative hypothesis.
 
 ### A Note on Power
 
